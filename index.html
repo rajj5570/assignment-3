@@ -1,137 +1,318 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assignment 3</title>
     <!-- tailwindcss+daisyUI cdn -->
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
 
-<!-- google fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-<!-- font awesome cdn -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-
-<style>
-    *{
-        font-family: 'Manrope', sans-serif;
-    }
-    .primary-color{
+    <style>
+      * {
+        font-family: "Manrope", sans-serif;
+      }
+      .primary-color {
         color: #ff4240;
-    }
-</style>
-
-
-</head>
-<body>
+      }
+    </style>
+  </head>
+  <body>
     <header class="mx-3 md:mx-10 lg:mx-20">
-
-        <!-- navbar section -->
-        <div class="navbar bg-base-100 px-0">
-
-            <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost px-0 md:pr-0 lg:hidden">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
-                </div>
-                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Home</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >About</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Pages</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Blog</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Contact</a></li>
-                </ul>
-              </div>
-              <a class="btn btn-ghost text-xl md:text-2xl lg:text-4xl font-extrabold text-[#131318] lg:pl-0">Hockey<span class="text-[#ff4240] -ml-2 -mr-[10px]" >’</span>s</a>
+      <!-- navbar section -->
+      <div class="navbar bg-base-100 px-0">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost px-0 md:pr-0 lg:hidden"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
             </div>
-            <div class="navbar-center hidden  lg:flex">
-                <ul class="menu menu-horizontal px-1">
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Home</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >About</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Pages</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Blog</a></li>
-                  <li><a class="text-[ #424247] hover:text-[#ff4240] " >Contact</a></li>
-                </ul>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a class="text-[ #424247] hover:text-[#ff4240]">Home</a></li>
+              <li><a class="text-[ #424247] hover:text-[#ff4240]">About</a></li>
+              <li><a class="text-[ #424247] hover:text-[#ff4240]">Pages</a></li>
+              <li><a class="text-[ #424247] hover:text-[#ff4240]">Blog</a></li>
+              <li>
+                <a class="text-[ #424247] hover:text-[#ff4240]">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <a
+            class="btn btn-ghost text-xl md:text-2xl lg:text-4xl font-extrabold text-[#131318] lg:pl-0"
+            >Hockey<span class="text-[#ff4240] -ml-2 -mr-[10px]">’</span>s</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+            <li><a class="text-[ #424247] hover:text-[#ff4240]">Home</a></li>
+            <li><a class="text-[ #424247] hover:text-[#ff4240]">About</a></li>
+            <li><a class="text-[ #424247] hover:text-[#ff4240]">Pages</a></li>
+            <li><a class="text-[ #424247] hover:text-[#ff4240]">Blog</a></li>
+            <li><a class="text-[ #424247] hover:text-[#ff4240]">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 mr-5 hidden md:block lg:block hover:text-[#ff4240]"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+            />
+          </svg>
+
+          <a
+            class="btn btn-sm md:btn-md text-white text-xs md:text-xl font-bold bg-[#ff4240] cursor-pointer hover:text-[#ff4240] hover:bg-white"
+            >Get Ticket</a
+          >
+        </div>
+      </div>
+
+      <!-- banner section -->
+      <section class="mt-6 mb-8 md:mb-16 lg:mb-24 lg:mt-12">
+        <div class="carousel w-full">
+          <!-- slide-1 -->
+          <div
+            id="slide1"
+            class="carousel-item relative w-full rounded-2xl z-10"
+          >
+            <img src="./Images/1.png" class="w-full object-cover" />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#131318] text-white border-none"
+                >❮</a
+              >
+
+              <div
+                class="hidden lg:grid z-20 bg-[#131318] lg:max-w-[35rem] lg:max-h-40 rounded-xl absolute lg:top-28 lg:right-4 lg:fixed"
+              >
+                <h3 class="text-white text-2xl font-extrabold pt-8 pl-8">
+                  Meet all the heroes from the field
+                </h3>
+                <p class="text-[#ffffff99] font-medium pt-4 pl-8 pb-8">
+                  Explore our website for the latest updates, player profiles, and
+            exclusive content, celebrating the heart-pounding spirit of the game
+                </p>
               </div>
-            <div class="navbar-end">
-                
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-5 hidden md:block lg:block hover:text-[#ff4240]">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
-                  </svg>
-                  
-              <a class="btn btn-sm md:btn-md text-white text-xs md:text-xl font-bold bg-[#ff4240] cursor-pointer hover:text-[#ff4240] hover:bg-white">Get Ticket</a>
+
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#131318] text-white border-none"
+                >❯</a
+              >
             </div>
           </div>
+          <!-- slide-2 -->
+          <div
+            id="slide2"
+            class="carousel-item relative w-full rounded-2xl z-10"
+          >
+            <img
+              src="./Images/./111.png"
+              class="w-full object-cover rounded-2xl"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#131318] text-white border-none"
+                >❮</a
+              >
 
-
-          <!-- banner section -->
-          <section class=" mt-6 lg:mt-12 ">
-            <div class="carousel w-full  ">
-              <!-- slide-1 -->
-                <div id="slide1" class=" carousel-item relative w-full rounded-2xl z-10">
-                  <img src="./Images/1.png" class="w-full" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-
-
-                    <div class=" hidden lg:grid z-20 bg-[#131318] lg:max-w-[35rem] lg:max-h-40 rounded-xl absolute lg:top-28 lg:right-4 lg:fixed">
-                      <h3 class="text-white text-2xl font-extrabold pt-8 pl-8 ">Meet all the heroes from the field</h3>
-                      <p class="text-[#ffffff99] font-medium pt-4 pl-8 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                    </div>
-
-
-                    <a href="#slide2" class="btn btn-circle">❯</a>
-
-                    
-                  </div>
-                </div> 
-                <!-- slide-2 -->
-                <div id="slide2" class="carousel-item relative w-full rounded-2xl z-10">
-                  <img src="./Images/./111.png" class="w-full rounded-2xl" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide1" class="btn btn-circle">❮</a> 
-
-                    <div class=" hidden lg:grid z-20 bg-[#131318] lg:max-w-[35rem] lg:max-h-40 rounded-xl absolute lg:top-28 lg:right-4 lg:fixed">
-                      <h3 class="text-white text-2xl font-extrabold pt-8 pl-8 ">Meet all the heroes from the field</h3>
-                      <p class="text-[#ffffff99] font-medium pt-4 pl-8 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                    </div>
-                    <a href="#slide3" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                <!-- slide-3 -->
-                <div id="slide3" class="carousel-item relative w-full rounded-2xl z-10">
-                  <img src="./Images/1111.png" class="w-full rounded-2xl" />
-                  <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                    <a href="#slide2" class="btn btn-circle">❮</a> 
-
-                    <div class=" hidden lg:grid z-20 bg-[#131318] lg:max-w-[35rem] lg:max-h-40 rounded-xl absolute lg:top-28 lg:right-4 lg:fixed">
-                      <h3 class="text-white text-2xl font-extrabold pt-8 pl-8 ">Meet all the heroes from the field</h3>
-                      <p class="text-[#ffffff99] font-medium pt-4 pl-8 pb-8">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-                    </div>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
-                  </div>
-                </div> 
-                
+              <div
+                class="hidden lg:grid z-20 bg-[#131318] lg:max-w-[35rem] lg:max-h-40 rounded-xl absolute lg:top-28 lg:right-4 lg:fixed"
+              >
+                <h3 class="text-white text-2xl font-extrabold pt-8 pl-8">
+                  Meet all the heroes from the field
+                </h3>
+                <p class="text-[#ffffff99] font-medium pt-4 pl-8 pb-8">
+                  Explore our website for the latest updates, player profiles, and
+            exclusive content, celebrating the heart-pounding spirit of the game
+                </p>
               </div>
-              <div class="lg:hidden z-20 bg-[#131318] w-full rounded-xl p-3 md:p-8 ">
-                <h3 class="text-white text-base md:text-xl lg:text-2xl font-extrabold lg:pt-8 lg:pl-8">Meet all the heroes from the field</h3>
-                <p class="text-[#ffffff99] text-xs md:text-sm lg:text-base font-medium pt-2 lg:pt-4 lg:pl-8"> Explore our website for the latest updates, player profiles, and exclusive content, celebrating the heart-pounding spirit of the game </p>
-              </div>
-          </section>
+              <a
+                href="#slide3"
+                class="btn btn-circle bg-[#131318] text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+          <!-- slide-3 -->
+          <div
+            id="slide3"
+            class="carousel-item relative w-full rounded-2xl z-10"
+          >
+            <img
+              src="./Images/1111.png"
+              class="w-full object-contain rounded-2xl"
+            />
+            <div
+              class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+            >
+              <a
+                href="#slide2"
+                class="btn btn-circle bg-[#131318] text-white border-none"
+                >❮</a
+              >
 
+              <div
+                class="hidden lg:grid z-20 bg-[#131318] lg:max-w-[35rem] lg:max-h-40 rounded-xl absolute lg:top-28 lg:right-4 lg:fixed"
+              >
+                <h3 class="text-white text-2xl font-extrabold pt-8 pl-8">
+                  Meet all the heroes from the field
+                </h3>
+                <p class="text-[#ffffff99] font-medium pt-4 pl-8 pb-8">
+                  Explore our website for the latest updates, player profiles, and
+            exclusive content, celebrating the heart-pounding spirit of the game
+                </p>
+              </div>
+              <a
+                href="#slide1"
+                class="btn btn-circle bg-[#131318] text-white border-none"
+                >❯</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="lg:hidden z-20 bg-[#131318] w-full rounded-xl p-3 md:p-8">
+          <h3
+            class="text-white text-base md:text-xl lg:text-2xl font-extrabold lg:pt-8 lg:pl-8"
+          >
+            Meet all the heroes from the field
+          </h3>
+          <p
+            class="text-[#ffffff99] text-xs md:text-sm lg:text-base font-medium pt-2 lg:pt-4 lg:pl-8"
+          >
+            Explore our website for the latest updates, player profiles, and
+            exclusive content, celebrating the heart-pounding spirit of the game
+          </p>
+        </div>
+      </section>
     </header>
 
+    <main class="mx-3 md:mx-10 lg:mx-20">
+      <section class="mt-8 md:mt-16 lg:mt-25 ">
+        <div class="border border-dashed border-x-0 py-8 mb-8">
+          <h3 class="text-center text-[#131318] text-xl md:text-2xl  lg:text-4xl font-extrabold">Professional Hockeys Club</h3>
+          <p class="text-center text-[#13131899] font-semibold text-sm md:text-base mt-6 px-[1rem] md:px-[4rem] lg:px-[8rem]">
+            Beyond the thrill of the game, this is a community within itself—a
+            family bound by the frozen arena that serves as our battleground.
+            Our supporters, an unwavering sea of passionate fans, create an
+            electric atmosphere at every match, transforming the arena into a
+            fortress of cheers that propels our team to greatness
+          </p>
+        </div>
 
-
-
-    <main class="mx-3 md:mx-10 lg:mx-20"></main>
+        <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- progress bar-1 -->
+          <div class="p-4">
+            <div class="relative">
+              <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#FF4240"/>
+                
+              </svg>
+              <p class="h-full text-[#131318] text-3xl font-extrabold my-auto absolute top-[85%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">87%</p>
+            </div>
+            <h6 class="text-center text-[#131318] text-xl font-bold mt-8 ">Prayer Facility</h6>
+            <p class="text-center p-6 text-[#13131899]">A tranquil prayer space is provided, offering a sanctuary for reflection and spiritual connection for all our diverse team members and visitor</p>
+          </div>
+          <!-- progress bar-2 -->
+          <div class="p-4">
+            <div class="relative">
+              <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M114.266 60C117.433 60 120.028 57.4266 119.726 54.274C118.506 41.5436 113.241 29.4793 104.626 19.8933C94.7273 8.87961 81.1057 1.91535 66.3817 0.340346C51.6576 -1.23466 36.8712 2.69086 24.8672 11.3617C12.8632 20.0325 4.48966 32.836 1.35752 47.3091C-1.77461 61.7821 0.55594 76.9021 7.90081 89.7603C15.2457 102.618 27.086 112.306 41.1438 116.96C55.2016 121.614 70.4837 120.905 84.0501 114.969C95.858 109.803 105.64 100.995 112.015 89.9081C113.593 87.1625 112.294 83.7461 109.41 82.4366C106.526 81.1272 103.155 82.426 101.515 85.1352C96.3546 93.6587 88.6662 100.431 79.4529 104.462C68.4798 109.263 56.1188 109.836 44.7481 106.072C33.3775 102.308 23.8005 94.4719 17.8596 84.0716C11.9187 73.6713 10.0336 61.4414 12.567 49.7349C15.1005 38.0284 21.8734 27.6723 31.5828 20.6589C41.2923 13.6455 53.2523 10.4704 65.1618 11.7443C77.0714 13.0182 88.0892 18.6513 96.0955 27.5597C102.818 35.0393 107.018 44.3841 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#49D293"/>
+              </svg>
+                
+              </svg>
+              <p class="h-full text-[#131318] text-3xl font-extrabold my-auto absolute top-[85%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">95%</p>
+            </div>
+            <h6 class="text-center text-[#131318] text-xl font-bold mt-8 ">Experienced Caoch</h6>
+            <p class="text-center p-6 text-[#13131899]">Our illustrious journey is guided by the expert, whose wealth of experience transforms every challenge into a strategic triumph on the icy battleground</p>
+          </div>
+          <!-- progress bar-3 -->
+          <div class="p-4">
+            <div class="relative">
+              <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M110.134 80.7677C113.06 81.9797 116.443 80.5956 117.371 77.5673C120.973 65.8033 120.885 53.165 117.038 41.3814C112.596 27.7733 103.435 16.2017 91.2094 8.75578C78.9837 1.30986 64.4986 -1.51971 50.3695 0.777937C36.2403 3.07558 23.3982 10.349 14.1616 21.2851C4.92507 32.2212 -0.0972474 46.0992 0.00142546 60.4136C0.100098 74.728 5.31326 88.5355 14.6997 99.3431C24.0862 110.151 37.0273 117.247 51.1868 119.349C63.4479 121.17 75.9229 119.143 86.9184 113.623C89.7488 112.202 90.5474 108.635 88.8628 105.953C87.1783 103.271 83.6496 102.497 80.7878 103.854C72.1379 107.954 62.4244 109.423 52.8714 108.005C41.4186 106.304 30.9511 100.565 23.3589 91.8227C15.7666 83.0809 11.55 71.9127 11.4702 60.3345C11.3903 48.7563 15.4526 37.5311 22.9236 28.6854C30.3946 19.8398 40.782 13.9567 52.2103 12.0982C63.6387 10.2398 75.3549 12.5285 85.2438 18.5511C95.1326 24.5737 102.542 33.9334 106.135 44.9403C109.132 54.1213 109.309 63.9437 106.713 73.1577C105.855 76.2061 107.208 79.5556 110.134 80.7677Z" fill="#FFB546"/>
+              </svg>
+                
+              </svg>
+              <p class="h-full text-[#131318] text-3xl font-extrabold my-auto absolute top-[85%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">90%</p>
+            </div>
+            <h6 class="text-center text-[#131318] text-xl font-bold mt-8 ">Senior Player</h6>
+            <p class="text-center p-6 text-[#13131899]">An esteemed senior player with a storied career, their seasoned finesse and leadership on the ice embody the living legacy</p>
+          </div>
+          <!-- progress bar-4 -->
+          <div class="p-4">
+            <div class="relative">
+              <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+                <path d="M120 60C120 93.1371 93.1371 120 60 120C26.8629 120 0 93.1371 0 60C0 26.8629 26.8629 0 60 0C93.1371 0 120 26.8629 120 60ZM11.469 60C11.469 86.8029 33.1971 108.531 60 108.531C86.8029 108.531 108.531 86.8029 108.531 60C108.531 33.1971 86.8029 11.469 60 11.469C33.1971 11.469 11.469 33.1971 11.469 60Z" fill="#E7E7E8"/>
+                <path d="M114.266 60C117.433 60 120.028 57.4265 119.726 54.2739C118.63 42.8387 114.268 31.914 107.102 22.8328C98.7478 12.2455 87.0702 4.78141 73.9534 1.64503C60.8366 -1.49135 47.0457 -0.117159 34.8058 5.54589C22.5658 11.2089 12.5907 20.8306 6.48991 32.8583C0.389129 44.8861 -1.48153 58.6185 1.17978 71.8398C3.84108 85.0612 10.8791 97.0004 21.1583 105.731C31.4376 114.462 44.3584 119.475 57.8362 119.961C69.3965 120.378 80.7882 117.444 90.6624 111.574C93.3847 109.955 93.9276 106.34 92.0567 103.785C90.1858 101.229 86.611 100.708 83.8529 102.265C76.0892 106.646 67.2324 108.824 58.2498 108.499C47.3483 108.106 36.8973 104.051 28.5829 96.9895C20.2686 89.9277 14.5759 80.2707 12.4233 69.5766C10.2707 58.8826 11.7837 47.7751 16.7184 38.0465C21.653 28.3178 29.7213 20.5354 39.6216 15.9548C49.5219 11.3742 60.6767 10.2627 71.2862 12.7996C81.8957 15.3364 91.3411 21.3737 98.0985 29.9373C103.666 36.9936 107.142 45.426 108.193 54.2786C108.566 57.4236 111.098 60 114.266 60Z" fill="#4C8DF1"/>
+              </svg>
+                
+              </svg>
+              <p class="h-full text-[#131318] text-3xl font-extrabold my-auto absolute top-[85%] left-[50%] transform translate-x-[-50%] translate-y-[-50%]">80%</p>
+            </div>
+            <h6 class="text-center text-[#131318] text-xl font-bold mt-8">Training Ground</h6>
+            <p class="text-center p-6 text-[#13131899]">Echoes of blades carving through the ice harmonize with the relentless pursuit of excellence, forging a crucible where champions are honed</p>
+          </div>
+          
+        </div>
+      </section>
+    </main>
     <footer></footer>
-</body>
+  </body>
 </html>
